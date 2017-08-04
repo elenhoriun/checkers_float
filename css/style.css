@@ -1,0 +1,93 @@
+body {
+	max-width: 1200px;
+}
+
+.board {
+	max-width: 500px;
+	height: 500px;
+	background: url(../img/checkers.jpg) center center no-repeat;
+	background-size: contain;
+	margin: 100px auto;
+	transform: rotate(25deg);
+}
+
+.board div {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.row {
+	width: 100%;
+	height: 11.5%;
+}
+
+.row:nth-child(odd) div {
+	float: right;
+}
+
+.row:nth-child(even) div {
+	float: left;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.row__grey1 {
+	padding-top: 5%;
+	}
+
+.row__red1 {
+	padding-top: 22%;
+}
+
+.grey-check {
+	background-color: #303030;
+	}
+
+.red-check {
+	background-color: #e10011;
+	}
+
+.grey-check__1, .grey-check__9 {
+	margin-right: 6%;
+}
+
+.grey-check__2, .grey-check__3, .grey-check__4 {
+	margin-right: 12.5%;
+}
+
+.grey-check__5 {
+	margin-left: 6%;
+}
+
+.grey-check__6, .grey-check__7, .grey-check__8 {
+	margin-left: 12.5%;
+}
+
+.grey-check__10, .grey-check__11, .grey-check__12 {
+	margin-right: 12.5%;
+}
+
+.red-check__1, .red-check__9 {
+	margin-left: 6%;
+}
+
+.red-check__2, .red-check__3, .red-check__4 {
+	margin-left: 12.5%;
+}
+
+.red-check__5 {
+	margin-right: 6%;
+}
+
+.red-check__6, .red-check__7, .red-check__8 {
+	margin-right: 12.5%;
+}
+
+.red-check__10, .red-check__11, .red-check__12 {
+	margin-left: 12.5%;
+}
